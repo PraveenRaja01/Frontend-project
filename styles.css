@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    background: #ffffff;
+    color: #000;
+    padding: 20px;
+}
+
+.dark-mode {
+    background: #181818;
+    color: #ffffff;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.dark-mode .app-container {
+    background: #282c34;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.dark-mode h1 {
+    color: #ff5733;
+}
+
+.task-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #000;
+}
+
+.dark-mode input {
+    background: #333;
+    color: #fff;
+    border: 2px solid #ff5733;
+}
+
+button {
+    padding: 14px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 2px solid #ddd;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+    color: #000;
+}
+
+.dark-mode li {
+    background: #444;
+    border-bottom: 2px solid #666;
+    color: #fff;
+}
+
+.task-text {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.dark-mode .task-text {
+    background: #333;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-task {
+    background: #dc3545;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-task:hover {
+    background: #a71d2a;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.3);
+}
